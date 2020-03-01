@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>TGMS </title>
+    <title>OTGMS </title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -81,7 +81,7 @@
                                     @endadmin
 
                                     @guide
-                                    {{ Auth::user()->tourist->firstname.'  '.Auth::user()->tourist->lastname }}
+                                    <h3>{{ Auth::user()->guide->firstname.'  '.Auth::user()->guide->lastname }}</h3>
                                     @endguide
 
                                     @tourist

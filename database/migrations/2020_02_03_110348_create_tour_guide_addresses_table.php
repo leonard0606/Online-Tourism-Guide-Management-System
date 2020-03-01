@@ -17,7 +17,7 @@ class CreateTourGuideAddressesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('guide_id');
             $table->string('city');
-            $table->string('county');
+            $table->string('country');
             $table->string('postalcode');
             $table->foreign('guide_id')->references('id')->on('tour_guides');
         });
